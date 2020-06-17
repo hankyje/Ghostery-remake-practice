@@ -1,6 +1,21 @@
 {
-    "name": "Hello, world!",
+    "name": "Totally for real actual ghostery extension",
     "version":"0.000001",
-    "manifest_version": 2
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "browser_action": {
+        "default_icon": {
+            "16": "icon99.png",
+            "24": "icon99.png",
+            "32": "icon99.png"
+        },
+        "default_title": "gh05t3ry",
+        "default_popup": "popup.html"
+    }
 
 }
