@@ -11,14 +11,14 @@
 
     "browser_action": {
         "default_icon": {
-            "16": "icon99.png",
-            "24": "icon99.png",
-            "32": "icon99.png"
+            "16": "images/icon99.png",
+            "24": "images/icon99.png",
+            "32": "images/icon99.png"
         },
         "default_title": "gh05t3ry",
         "default_popup": "popup.html"
     },
-    
+
     "background": {
         "js": ["background.js"]
     }
