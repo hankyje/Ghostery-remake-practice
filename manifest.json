@@ -2,7 +2,26 @@
     "manifest_version": 2,
     "name": "Totally for real actual ghostery extension",
     "version":"0.0.1",
-    "content_scripts": [
+    "permissions": [
+        "webRequest",
+        "http://*/*",
+        "https://*/*",
+        "webNavigation",
+        "cookies",
+        "tabs",
+        "ws://*/*",
+        "wss://*/*",
+        "storage"
+    ],
+
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+
+    "content-scripts": [
         {
             "matches": ["<all_urls>"],
             "js": ["content-scripts/friendly-notification.js"]
@@ -17,10 +36,7 @@
         },
         "default_title": "gh05t3ry",
         "default_popup": "popup.html"
-    },
-
-    "background": {
-        "js": ["background.js"]
     }
+
 
 }
